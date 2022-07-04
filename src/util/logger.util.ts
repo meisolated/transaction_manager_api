@@ -1,7 +1,7 @@
 import winston from "winston"
-import { dateNtime } from "../functions/funtions.js"
+import { dateNtime } from "./functions.util"
 
-var LoggerUtil = {}
+var LoggerUtil: any = {}
 
 var logger = winston.createLogger({
     format: winston.format.combine(
@@ -16,32 +16,32 @@ var logger = winston.createLogger({
         }),
         new winston.transports.File({
             level: "silly",
-            filename: "./log/ServerData.log",
+            filename: "./dist/logs/ServerData.log",
         }),
     ],
 })
 
-LoggerUtil.silly = (message) => {
+LoggerUtil.silly = (message: string) => {
     logger.log("silly", message)
 }
 
-LoggerUtil.debug = (message) => {
+LoggerUtil.debug = (message: string) => {
     logger.log("debug", message)
 }
 
-LoggerUtil.verbose = (message) => {
+LoggerUtil.verbose = (message: string) => {
     logger.log("verbose", message)
 }
 
-LoggerUtil.info = (message) => {
+LoggerUtil.info = (message: string) => {
     logger.log("info", message)
 }
 
-LoggerUtil.warn = (message) => {
+LoggerUtil.warn = (message: string) => {
     logger.log("warn", message)
 }
 
-LoggerUtil.error = (message) => {
+LoggerUtil.error = (message: string) => {
     logger.log("error", message)
 }
 
