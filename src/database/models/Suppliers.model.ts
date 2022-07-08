@@ -1,7 +1,7 @@
 import sequelize from "../db.js"
 import { DataTypes } from "sequelize"
 
-export const Live = sequelize.define(
+export const Suppliers = sequelize.define(
     "tbl_suppliers",
     {
         id: {

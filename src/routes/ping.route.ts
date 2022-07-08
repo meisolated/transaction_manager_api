@@ -1,3 +1,4 @@
+import authenticateToken from "../middleware/authenticateToken.middleware"
 import { CommonRoutesConfig } from "../common/common.routes.config"
 import { Settings } from "../database/models/Settings.model"
 import express from "express"
