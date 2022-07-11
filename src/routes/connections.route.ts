@@ -14,6 +14,7 @@ export class Connection extends CommonRoutesConfig {
     configureRoutes(): express.Application {
         this.app.post("/connection", authenticateToken, async (req: any, res: express.Response) => {
             let params: any = req.body
+            console.log(params)
             if (!params.method) return res.status(200).send({ status: "error", message: "invalid body", code: 400 })
 
             /**
@@ -27,15 +28,22 @@ export class Connection extends CommonRoutesConfig {
 
             switch (params.method) {
                 case "get_owner":
-                    let owner = await Connections.findOne({ where: { user_id: req.user.id } })
+                    let owner: any = await Connections.findOne({ where: { user_id: req.user.id } })
                     if (!owner) return res.status(200).send({ status: "error", message: "user not connected", code: 404 })
-                    return res.status(200).send({ status: "success", message: "success", code: 200, owner })
-                    break
+                    let ownerData: any = await User.findOne({ where: { id: owner.working_under_user_id } })
+                    return res.status(200).send({ status: "success", message: "success", code: 200, owner, ownerData: { phone: ownerData.phone, name: ownerData.name } })
+                // ---------------------------------------------------------------------------------------------------------------------
                 case "get_members":
-                    let members = await Connections.findAll({ where: { working_under_user_id: req.user.id } })
+                    let members: any = await Connections.findAll({ where: { working_under_user_id: req.user.id } })
+                    // get members data 
+                    let membersData: any = []
+                    for (let i = 0; i < members.length; i++) {
+                        let _member: any = await User.findOne({ where: { id: members[i].user_id } })
+                        membersData.push({ phone: _member.phone, name: _member.name })
+                    }
                     if (!members) return res.status(200).send({ status: "error", message: "no users working under you", code: 404 })
-                    return res.status(200).send({ status: "success", message: "success", code: 200, members })
-                    break
+                    return res.status(200).send({ status: "success", message: "success", code: 200, members, membersData })
+                // ---------------------------------------------------------------------------------------------------------------------
                 case "invite":
                     if (!params.phone || typeof params.phone === "number") return res.status(200).send({ status: "error", message: "invalid body", code: 400 })
                     let user: any = await User.findOne({ where: { phone: params.phone } })
@@ -50,6 +58,7 @@ export class Connection extends CommonRoutesConfig {
                             return res.status(200).send({ status: "error", message: "error", code: 400, err })
                         })
                     break
+                // ---------------------------------------------------------------------------------------------------------------------
                 case "remove":
                     if (!params.phone || typeof params.phone === "number") return res.status(200).send({ status: "error", message: "invalid body", code: 400 })
                     let userToRemove: any = await User.findOne({ where: { phone: params.phone } })
@@ -66,6 +75,7 @@ export class Connection extends CommonRoutesConfig {
                             return res.status(200).send({ status: "error", message: "error", code: 400, err })
                         })
                     break
+                // ---------------------------------------------------------------------------------------------------------------------
                 case "accept":
                     if (!params.phone || typeof params.phone === "number") return res.status(200).send({ status: "error", message: "invalid body", code: 400 })
                     let userToAccept: any = await User.findOne({ where: { phone: params.phone } })
@@ -83,9 +93,21 @@ export class Connection extends CommonRoutesConfig {
                             return res.status(200).send({ status: "error", message: "error", code: 400, err })
                         })
                     break
-                // default:
-                //     return res.status(200).send({ status: "error", message: "invalid body", code: 400 })
-
+                case "leave_connection":
+                    let connectionToLeave: any = await Connections.findOne({ where: { user_id: req.user.id } })
+                    if (!connectionToLeave) return res.status(200).send({ status: "error", message: "user not connected", code: 404 })
+                    connectionToLeave
+                        .destroy()
+                        .then((connection: any) => {
+                            return res.status(200).send({ status: "success", message: "success", code: 200, connection })
+                        }
+                        )
+                        .catch((err: any) => {
+                            return res.status(200).send({ status: "error", message: "error", code: 400, err })
+                        }
+                        )
+                    break
+                // ---------------------------------------------------------------------------------------------------------------------
             }
         })
         return this.app
