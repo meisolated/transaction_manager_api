@@ -16,3 +16,154 @@
 [07-07-2022 03:34:37] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
 [07-07-2022 03:34:37] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
 [07-07-2022 03:35:27] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[09-07-2022 06:42:51] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `value` FROM `tbl_settings` AS `tbl_settings`;[39m
+[09-07-2022 06:46:00] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `value` FROM `tbl_settings` AS `tbl_settings`;[39m
+[09-07-2022 06:49:32] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `value` FROM `tbl_settings` AS `tbl_settings`;[39m
+[09-07-2022 06:51:00] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `value` FROM `tbl_settings` AS `tbl_settings`;[39m
+[09-07-2022 06:51:16] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `value` FROM `tbl_settings` AS `tbl_settings`;[39m
+[09-07-2022 06:51:24] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `value` FROM `tbl_settings` AS `tbl_settings`;[39m
+[09-07-2022 06:51:26] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `value` FROM `tbl_settings` AS `tbl_settings`;[39m
+[10-07-2022 03:25:32] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `value` FROM `tbl_settings` AS `tbl_settings`;[39m
+[10-07-2022 03:28:16] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`) VALUES (?,?,?,?,?);[39m
+[10-07-2022 03:29:51] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`) VALUES (?,?,?,?,?);[39m
+[10-07-2022 03:30:20] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`) VALUES (?,?,?,?,?);[39m
+[10-07-2022 03:31:51] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`) VALUES (?,?,?,?,?);[39m
+[10-07-2022 03:32:35] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 03:32:43] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 03:32:52] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417054' LIMIT 1;[39m
+[10-07-2022 03:32:58] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 03:40:35] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:21:01] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:21:02] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:21:04] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:21:11] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:21:18] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:21:18] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:21:18] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:23:09] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:26:04] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:26:12] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:26:53] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:27:10] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:27:42] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:27:54] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:31:56] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:32:43] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:34:12] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:34:37] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:35:06] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 10:35:32] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[10-07-2022 11:26:04] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[10-07-2022 11:26:18] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[10-07-2022 11:26:35] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[10-07-2022 11:26:44] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[10-07-2022 11:26:51] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[10-07-2022 11:27:18] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[10-07-2022 11:27:18] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
+[10-07-2022 11:27:38] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[10-07-2022 11:27:51] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[10-07-2022 11:27:51] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
+[11-07-2022 04:46:56] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 04:46:59] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417055' LIMIT 1;[39m
+[11-07-2022 04:47:10] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[11-07-2022 04:49:35] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 04:49:35] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
+[11-07-2022 05:26:45] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 05:26:55] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 05:26:55] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
+[11-07-2022 05:29:18] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 05:29:18] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
+[11-07-2022 05:29:34] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 05:29:44] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_users` (`id`,`name`,`phone`,`password`,`approved`,`logged_in`) VALUES (?,?,?,?,?,?);[39m
+[11-07-2022 05:30:51] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 05:30:51] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
+[11-07-2022 05:31:22] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 05:31:22] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
+[11-07-2022 05:32:49] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 05:32:49] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
+[11-07-2022 05:33:41] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 05:33:41] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
+[11-07-2022 05:34:03] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 05:34:03] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
+[11-07-2022 05:35:23] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 05:35:23] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
+[11-07-2022 05:35:42] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 05:35:42] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
+[11-07-2022 05:37:33] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 05:37:33] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
+[11-07-2022 10:39:19] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417054' LIMIT 1;[39m
+[11-07-2022 10:39:26] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:39:26] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_users` SET `logged_in`=? WHERE `id` = ?[39m
+[11-07-2022 10:41:58] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:42:12] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:42:12] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:42:12] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_connections` (`id`,`user_id`,`working_under_user_id`,`approved`) VALUES (?,?,?,?);[39m
+[11-07-2022 10:42:12] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:43:02] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:43:02] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:43:02] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_connections` (`id`,`user_id`,`working_under_user_id`,`approved`) VALUES (?,?,?,?);[39m
+[11-07-2022 10:43:02] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:43:02] [[32minfo[39m] : [32mExecuting (default): DELETE FROM `tbl_connections` WHERE `id` = 1[39m
+[11-07-2022 10:43:02] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:43:02] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:43:02] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_connections` SET `approved`=? WHERE `id` = ?[39m
+[11-07-2022 10:50:15] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:50:16] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:50:16] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_connections` (`id`,`user_id`,`working_under_user_id`,`approved`) VALUES (?,?,?,?);[39m
+[11-07-2022 10:50:16] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:50:16] [[32minfo[39m] : [32mExecuting (default): DELETE FROM `tbl_connections` WHERE `id` = 2[39m
+[11-07-2022 10:50:16] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:50:16] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:50:16] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_connections` SET `approved`=? WHERE `id` = ?[39m
+[11-07-2022 10:52:52] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:52:52] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:52:52] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_connections` (`id`,`user_id`,`working_under_user_id`,`approved`) VALUES (?,?,?,?);[39m
+[11-07-2022 10:52:52] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:52:52] [[32minfo[39m] : [32mExecuting (default): DELETE FROM `tbl_connections` WHERE `id` = 3[39m
+[11-07-2022 10:52:52] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:52:52] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:52:52] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_connections` SET `approved`=? WHERE `id` = ?[39m
+[11-07-2022 10:53:45] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:53:45] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:53:45] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_connections` (`id`,`user_id`,`working_under_user_id`,`approved`) VALUES (?,?,?,?);[39m
+[11-07-2022 10:53:45] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:53:45] [[32minfo[39m] : [32mExecuting (default): DELETE FROM `tbl_connections` WHERE `id` = 4[39m
+[11-07-2022 10:53:45] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:53:45] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:53:45] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_connections` SET `approved`=? WHERE `id` = ?[39m
+[11-07-2022 10:53:57] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:53:57] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:53:57] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_connections` (`id`,`user_id`,`working_under_user_id`,`approved`) VALUES (?,?,?,?);[39m
+[11-07-2022 10:53:57] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:53:57] [[32minfo[39m] : [32mExecuting (default): DELETE FROM `tbl_connections` WHERE `id` = 5[39m
+[11-07-2022 10:53:57] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:53:57] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:53:57] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_connections` SET `approved`=? WHERE `id` = ?[39m
+[11-07-2022 10:54:47] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:54:47] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:54:47] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_connections` (`id`,`user_id`,`working_under_user_id`,`approved`) VALUES (?,?,?,?);[39m
+[11-07-2022 10:54:47] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:54:47] [[32minfo[39m] : [32mExecuting (default): DELETE FROM `tbl_connections` WHERE `id` = 6[39m
+[11-07-2022 10:54:47] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:54:47] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:54:47] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_connections` SET `approved`=? WHERE `id` = ?[39m
+[11-07-2022 10:55:00] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:55:00] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:55:00] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_connections` (`id`,`user_id`,`working_under_user_id`,`approved`) VALUES (?,?,?,?);[39m
+[11-07-2022 10:55:00] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:55:00] [[32minfo[39m] : [32mExecuting (default): DELETE FROM `tbl_connections` WHERE `id` = 7[39m
+[11-07-2022 10:55:00] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:55:00] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:55:00] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_connections` SET `approved`=? WHERE `id` = ?[39m
+[11-07-2022 10:55:21] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:55:21] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:55:21] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_connections` (`id`,`user_id`,`working_under_user_id`,`approved`) VALUES (?,?,?,?);[39m
+[11-07-2022 10:55:21] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:55:21] [[32minfo[39m] : [32mExecuting (default): DELETE FROM `tbl_connections` WHERE `id` = 8[39m
+[11-07-2022 10:55:21] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:55:21] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `user_id`, `working_under_user_id`, `approved` FROM `tbl_connections` AS `tbl_connections` WHERE `tbl_connections`.`user_id` = 11 AND `tbl_connections`.`working_under_user_id` = 11 LIMIT 1;[39m
+[11-07-2022 10:55:21] [[32minfo[39m] : [32mExecuting (default): UPDATE `tbl_connections` SET `approved`=? WHERE `id` = ?[39m
+[11-07-2022 10:56:10] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:56:10] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_connections` (`id`,`user_id`,`working_under_user_id`,`approved`) VALUES (?,?,?,?);[39m
+[11-07-2022 10:58:10] [[32minfo[39m] : [32mExecuting (default): SELECT `id`, `name`, `phone`, `password`, `approved`, `logged_in` FROM `tbl_users` AS `tbl_users` WHERE `tbl_users`.`phone` = '8448417051' LIMIT 1;[39m
+[11-07-2022 10:58:10] [[32minfo[39m] : [32mExecuting (default): INSERT INTO `tbl_connections` (`id`,`user_id`,`working_under_user_id`,`approved`) VALUES (?,?,?,?);[39m

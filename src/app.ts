@@ -10,6 +10,7 @@ import { CommonRoutesConfig } from "./common/common.routes.config"
 import { Ping } from "./routes/ping.route"
 import { Signup } from "./routes/signup.route"
 import { Login } from "./routes/login.route"
+import { Connection } from "./routes/connections.route"
 
 const app: express.Application = express()
 const server: http.Server = http.createServer(app)
@@ -41,6 +42,7 @@ app.use(
 routes.push(new Ping(app))
 routes.push(new Signup(app))
 routes.push(new Login(app))
+routes.push(new Connection(app))
 
 app.use(
     expressWinston.errorLogger({

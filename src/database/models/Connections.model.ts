@@ -1,14 +1,14 @@
 import sequelize from "../db.js"
 import { DataTypes } from "sequelize"
 
-export const Live = sequelize.define(
+export const Connections = sequelize.define(
     "tbl_connections",
     {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
         },
-        user_id: DataTypes.STRING,
+        user_id: DataTypes.INTEGER,
         working_under_user_id: DataTypes.INTEGER,
         approved: DataTypes.STRING,
     },

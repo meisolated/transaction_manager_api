@@ -37,6 +37,7 @@ const cors_1 = __importDefault(require("cors"));
 const ping_route_1 = require("./routes/ping.route");
 const signup_route_1 = require("./routes/signup.route");
 const login_route_1 = require("./routes/login.route");
+const connections_route_1 = require("./routes/connections.route");
 const app = (0, express_1.default)();
 const server = http.createServer(app);
 const port = 3001;
@@ -59,7 +60,8 @@ app.use(expressWinston.logger({
 }));
 routes.push(new ping_route_1.Ping(app));
 routes.push(new signup_route_1.Signup(app));
-routes.push(new login_route_1.login(app));
+routes.push(new login_route_1.Login(app));
+routes.push(new connections_route_1.Connection(app));
 app.use(expressWinston.errorLogger({
     transports: [new winston.transports.Console()],
     format: winston.format.combine(winston.format.colorize(), winston.format.json()),

@@ -17,8 +17,8 @@ class Signup extends common_routes_config_1.CommonRoutesConfig {
         this.app.post("/signup", (req, res) => {
             let params = req.body;
             if (!params.phone || !params.name || typeof params.phone === "number")
-                return res.status(400).send({ message: "Invalid body", code: 400 });
-            //@TEMP SOLUTION will later start using password or will remove it 
+                return res.status(200).send({ message: "invalid body", code: 400, status: "error" });
+            //@TEMP SOLUTION will later start using password or will remove it entirely
             let password = !params.password ? "fJtJSPfs9uhrF75zYMjFybK6H56b5umVk3kZZSLqrtyMcLRgY" : params.password;
             password = bcrypt_1.default.hashSync(password, 10);
             Users_model_1.User.create({
@@ -26,14 +26,15 @@ class Signup extends common_routes_config_1.CommonRoutesConfig {
                 phone: params["phone"],
                 password: password,
                 approved: true,
+                logged_in: true,
             })
                 .then((user) => {
                 let token = (0, jwt_1.generateAccessToken)({ id: user.id, name: user.name, phone: user.phone });
-                return res.status(200).send({ token });
+                return res.status(200).send({ code: 200, status: "success", token });
             })
                 .catch((err) => {
-                let err_msg = err.errors[0].message ? err.errors[0].message : "Error while creating user";
-                return res.status(500).send({ message: err_msg, status: 500 });
+                let err_msg = "error while creating user";
+                return res.status(200).send({ message: err_msg, code: 500, status: "error", });
             });
         });
         return this.app;

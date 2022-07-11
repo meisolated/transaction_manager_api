@@ -11,7 +11,7 @@ export class Signup extends CommonRoutesConfig {
     configureRoutes(): express.Application {
         this.app.post("/signup", (req: express.Request, res: express.Response) => {
             let params: any = req.body
-            if (!params.phone || !params.name || typeof params.phone === "number") return res.status(400).send({ message: "invalid body", code: 400 })
+            if (!params.phone || !params.name || typeof params.phone === "number") return res.status(200).send({ message: "invalid body", code: 400, status: "error" })
 
             //@TEMP SOLUTION will later start using password or will remove it entirely
             let password = !params.password ? "fJtJSPfs9uhrF75zYMjFybK6H56b5umVk3kZZSLqrtyMcLRgY" : params.password
@@ -22,14 +22,15 @@ export class Signup extends CommonRoutesConfig {
                 phone: params["phone"],
                 password: password,
                 approved: true,
+                logged_in: true,
             })
                 .then((user: any) => {
                     let token = generateAccessToken({ id: user.id, name: user.name, phone: user.phone })
-                    return res.status(200).send({ token })
+                    return res.status(200).send({ code: 200, status: "success", token })
                 })
                 .catch((err: any) => {
-                    let err_msg = err.errors[0].message ? err.errors[0].message : "error while creating user"
-                    return res.status(500).send({ message: err_msg, status: 500 })
+                    let err_msg = "error while creating user"
+                    return res.status(200).send({ message: err_msg, code: 500, status: "error", })
                 })
         })
         return this.app
