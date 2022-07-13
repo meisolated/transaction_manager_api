@@ -13,9 +13,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Logout = void 0;
-const Users_model_1 = require("../database/models/Users.model");
-const common_routes_config_1 = require("../common/common.routes.config");
 const authenticateToken_middleware_1 = __importDefault(require("../middleware/authenticateToken.middleware"));
+const common_routes_config_1 = require("../common/common.routes.config");
+const Users_model_1 = require("../database/models/Users.model");
 class Logout extends common_routes_config_1.CommonRoutesConfig {
     constructor(app) {
         super(app, "logout");

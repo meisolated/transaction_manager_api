@@ -26,18 +26,20 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const connections_route_1 = require("./routes/connections.route");
 const expressWinston = __importStar(require("express-winston"));
-const bodyParser = __importStar(require("body-parser"));
-const winston = __importStar(require("winston"));
-const http = __importStar(require("http"));
-const express_rate_limit_1 = __importDefault(require("express-rate-limit"));
-const express_1 = __importDefault(require("express"));
-const debug_1 = __importDefault(require("debug"));
-const cors_1 = __importDefault(require("cors"));
-const ping_route_1 = require("./routes/ping.route");
+const logout_route_1 = require("./routes/logout.route");
 const signup_route_1 = require("./routes/signup.route");
 const login_route_1 = require("./routes/login.route");
-const connections_route_1 = require("./routes/connections.route");
+const ping_route_1 = require("./routes/ping.route");
+const express_rate_limit_1 = __importDefault(require("express-rate-limit"));
+const bodyParser = __importStar(require("body-parser"));
+const winston = __importStar(require("winston"));
+const express_1 = __importDefault(require("express"));
+const http = __importStar(require("http"));
+const debug_1 = __importDefault(require("debug"));
+const cors_1 = __importDefault(require("cors"));
+const backup_route_1 = require("./routes/backup.route");
 const app = (0, express_1.default)();
 const server = http.createServer(app);
 const port = 3001;
@@ -62,6 +64,8 @@ routes.push(new ping_route_1.Ping(app));
 routes.push(new signup_route_1.Signup(app));
 routes.push(new login_route_1.Login(app));
 routes.push(new connections_route_1.Connection(app));
+routes.push(new logout_route_1.Logout(app));
+routes.push(new backup_route_1.Backup(app));
 app.use(expressWinston.errorLogger({
     transports: [new winston.transports.Console()],
     format: winston.format.combine(winston.format.colorize(), winston.format.json()),

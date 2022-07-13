@@ -12,6 +12,7 @@ exports.Shops = db_js_1.default.define("tbl_shops", {
         primaryKey: true,
     },
     user_id: sequelize_1.DataTypes.STRING,
+    shop_id: sequelize_1.DataTypes.STRING,
     name: sequelize_1.DataTypes.STRING,
     address: sequelize_1.DataTypes.STRING,
     phone: sequelize_1.DataTypes.STRING,

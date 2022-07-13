@@ -1,7 +1,7 @@
-import { User } from "../database/models/Users.model"
-import { CommonRoutesConfig } from "../common/common.routes.config"
-import express from "express"
 import authenticateToken from "../middleware/authenticateToken.middleware"
+import { CommonRoutesConfig } from "../common/common.routes.config"
+import { User } from "../database/models/Users.model"
+import express from "express"
 
 
 export class Logout extends CommonRoutesConfig {

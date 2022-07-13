@@ -25,7 +25,6 @@ class Connection extends common_routes_config_1.CommonRoutesConfig {
     configureRoutes() {
         this.app.post("/connection", authenticateToken_middleware_1.default, (req, res) => __awaiter(this, void 0, void 0, function* () {
             let params = req.body;
-            console.log(params);
             if (!params.method)
                 return res.status(200).send({ status: "error", message: "invalid body", code: 400 });
             /**
@@ -50,7 +49,7 @@ class Connection extends common_routes_config_1.CommonRoutesConfig {
                     let membersData = [];
                     for (let i = 0; i < members.length; i++) {
                         let _member = yield Users_model_1.User.findOne({ where: { id: members[i].user_id } });
-                        membersData.push({ phone: _member.phone, name: _member.name });
+                        membersData.push({ phone: _member.phone, name: _member.name, approved: members[i].approved });
                     }
                     if (!members)
                         return res.status(200).send({ status: "error", message: "no users working under you", code: 404 });
@@ -71,11 +70,11 @@ class Connection extends common_routes_config_1.CommonRoutesConfig {
                         return res.status(200).send({ status: "success", message: "success", code: 200, connection });
                     })
                         .catch((err) => {
-                        return res.status(200).send({ status: "error", message: "error", code: 400, err });
+                        return res.status(200).send({ status: "error", message: err.message, code: 400, err });
                     });
                     break;
                 // ---------------------------------------------------------------------------------------------------------------------
-                case "remove":
+                case "remove_member":
                     if (!params.phone || typeof params.phone === "number")
                         return res.status(200).send({ status: "error", message: "invalid body", code: 400 });
                     let userToRemove = yield Users_model_1.User.findOne({ where: { phone: params.phone } });
@@ -97,18 +96,11 @@ class Connection extends common_routes_config_1.CommonRoutesConfig {
                     break;
                 // ---------------------------------------------------------------------------------------------------------------------
                 case "accept":
-                    if (!params.phone || typeof params.phone === "number")
-                        return res.status(200).send({ status: "error", message: "invalid body", code: 400 });
-                    let userToAccept = yield Users_model_1.User.findOne({ where: { phone: params.phone } });
+                    let userToAccept = yield Connections_model_1.Connections.findOne({ where: { user_id: req.user.id } });
                     if (!userToAccept)
                         return res.status(200).send({ status: "error", message: "user not found", code: 404 });
-                    if (!userToAccept.approved)
-                        return res.status(200).send({ status: "error", message: "user not approved", code: 401 });
-                    let connectionToAccept = yield Connections_model_1.Connections.findOne({ where: { user_id: userToAccept.id, working_under_user_id: req.user.id } });
-                    if (!connectionToAccept)
-                        return res.status(200).send({ status: "error", message: "user not connected", code: 404 });
-                    connectionToAccept.approved = true;
-                    connectionToAccept
+                    userToAccept.approved = true;
+                    userToAccept
                         .save()
                         .then((connection) => {
                         return res.status(200).send({ status: "success", message: "success", code: 200, connection });

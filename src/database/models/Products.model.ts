@@ -9,6 +9,7 @@ export const Products = sequelize.define(
             primaryKey: true,
         },
         user_id: DataTypes.STRING,
+        product_id: DataTypes.STRING,
         name: DataTypes.STRING,
         picture: DataTypes.STRING,
         description: DataTypes.STRING,

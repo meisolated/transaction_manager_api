@@ -9,7 +9,7 @@ export const ProductsAttribute = sequelize.define(
             primaryKey: true,
         },
         user_id: DataTypes.STRING,
-        product_id: DataTypes.INTEGER,
+        product_id: DataTypes.STRING,
         number: DataTypes.STRING,
         metric: DataTypes.STRING,
         cost_price: DataTypes.STRING,
